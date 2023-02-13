@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  schautocompletefe:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: schautocompletefe
+    image: schoology/frontreact
+    ports:
+      - "3000:3000"
+    volumes:
+      - "./:/app:delegated"
+      - "/app/node_modules"
+    networks:
+      - schoology-network
+
+networks:
+  schoology-network:
+    driver: bridge
