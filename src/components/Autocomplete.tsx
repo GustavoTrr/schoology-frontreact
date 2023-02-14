@@ -36,7 +36,7 @@ export default function Autocomplete() {
                 autoFocus
                 placeholder='Type the word here'
             />
-            <datalist id="suggestions">
+            <datalist id="suggestions" data-testid="suggestions-datalist">
                 {suggestions.map((suggestion) => (
                     <option value={suggestion} key={suggestion} />
                 ))}
