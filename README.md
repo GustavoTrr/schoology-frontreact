@@ -1,46 +1,38 @@
-# Getting Started with Create React App
+# SCHOOLOGY AUTOCOMPLETE REACT-FRONTEND
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## EXPLANAITION
+This is an conponent created with REACTJS to suggest words while user is typing
 
-## Available Scripts
+### ASSETS
+ - NODE 18
+ - NPM 
+ - REACTJS W/ TYPESCRIPT
 
-In the project directory, you can run:
+### REQUIREMENTS | PRE-REQUIESITES
+ - DOCKER and DOCKER-COMPOSE
 
-### `npm start`
+### INSTALATION & EXECUTION
+1. Download the repository
+2. Open the terminal on the root folder of the project
+3. execute the command
+```bash
+docker-compose up -d
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* As it run on 3000 port, make sure that this port is available
+* As it depends on the backend service, make sure the service is running on http://localhost:8000
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### USE
+* To access the service, use the url below
+http://localhost:3000
 
-### `npm test`
+### TESTS
+* To run the tests, just enter the docker container with interactive terminal 
+```bash
+docker exec -it schautocompletefe bash
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+and call for the tests
+```bash
+npm test
+```
